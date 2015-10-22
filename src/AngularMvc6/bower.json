@@ -1,0 +1,17 @@
+{
+  "name": "angular-mvc6-client",
+  "version": "1.0.0",
+  "authors": [
+    "Andrii Mysnyk"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angucomplete-alt": "latest"
+  }
+}

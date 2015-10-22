@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AngularMvc6</title>
+    <link rel="stylesheet" type="text/css" href="./lib/angucomplete-alt/angucomplete-alt.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+
+    <script type="text/javascript" src="./lib/angular/angular.js"></script>
+    <script type="text/javascript" src="./lib/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="./lib/angucomplete-alt/angucomplete-alt.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+</head>
+<body ng-app="app">
+    <div ng-controller="distancesController">
+        <div class="inline"><label>The distance between&nbsp;</label></div>
+        <div angucomplete-alt
+             id="stop1"
+             placeholder="first stop"
+             pause="100"
+             selected-object="setStop1"
+             local-data="stops"
+             search-fields="Name"
+             title-field="Name"
+             minlength="2"
+             input-class="form-control form-control-small"
+             match-class="highlight"
+             input-changed="inputChanged"
+             class="inline">
+        </div>
+        <div class="inline"><label>&nbsp;and&nbsp;</label></div>
+        <div angucomplete-alt
+             id="stop2"
+             placeholder="second stop"
+             pause="100"
+             selected-object="setStop2"
+             local-data="stops"
+             search-fields="Name"
+             title-field="Name"
+             minlength="2"
+             input-class="form-control form-control-small"
+             match-class="highlight"
+             input-changed="inputChanged"
+             class="inline">
+        </div>
+        <div class="inline"><label>&nbsp;{{distanceString}}</label></div>
+    </div>
+</body>
+</html>
